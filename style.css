@@ -15,12 +15,14 @@ body{
     background-position: center center;
     background-size:max(1200px, 100vw) ;
     background-repeat: no-repeat;
-    height: 70vh;
+    /* height: 70vh; */
+    height: 100vh;
     position: relative;
 }
 
 .main .box{
-    height: 70vh;
+    /* height: 70vh; */
+    height: 100vh;
     width: 100%;
     opacity: 0.6;
     background-color: black;
@@ -35,12 +37,12 @@ nav{
     margin:auto;
     display:flex;
     align-items: center;
-    height: 62px;
+    height: 100px;
 }
 
 nav img{
     color: rgb(229 9 20 );
-    width: 114px;
+    width: 130px;
     position: relative;
     z-index: 10;
 }
@@ -61,7 +63,7 @@ nav button{
 .hero{
     font-family: "Martel Sans", sans-serif;
     font-weight: 600;
-    height: calc(100% - 62px);
+    height: calc(100% - 100px);
     display:flex;
     align-items: center;
     justify-content: center;
@@ -103,6 +105,8 @@ nav button{
 }
 
 .separation{
+    position: relative;
+    z-index: 10;
     height: 7px;
     background-color: rgb(55, 48, 48);
 }
@@ -236,14 +240,12 @@ section .container{
 }
 
 .faqbox svg{
-    /* font-size: 30px; */
     color: white;
 }
 .lgstart{
     position: relative;
     display: flex;
     font-family: "Martel Sans", sans-serif;
-    /* font-weight: 400; */
     align-items: center;
     justify-content: center;
     color: white;
@@ -283,6 +285,7 @@ div input{
     padding: 4px 22px 4px 18px;
     font-size: 20px;
     border-radius: 0.25rem;
+    border:1px solid rgba(255, 255, 255, 0.238);
     text-align: center;
     cursor: pointer;
 }
@@ -290,4 +293,38 @@ div input{
 .btn-enred .gst{
     padding-left: 6px;
     font-size: 24px; 
+}
+
+/* footer styling  */
+footer{
+    color: #afafaf;
+    max-width: 70vw;
+    margin: auto;
+    padding: 14px;
+}
+
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    padding-bottom: 24px;
+}
+
+footer .questns{
+    padding: 24px  0 30px 0;
+}
+
+.footer a{
+    text-decoration-line: underline;
+    color: #afafaf;
+    font-weight: 400;
+    font-size: 14px;
+
+}
+.footer-items{
+    line-height: 21px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
 }
